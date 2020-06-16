@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Div Demo</title>
+    <link rel="stylesheet" href="div2.css" />
+    <script>
+      function changeColor(index) {
+        const p = document.getElementById('section');
+        console.log(p);
+        switch (index) {
+          case 1:
+            p.style.backgroundColor = 'yellow';
+            break;
+          case 2:
+            p.style.backgroundColor = 'azure';
+            break;
+          case 3:
+            p.style.backgroundColor = 'cornflowerblue';
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <header id="heading">
+        <h2>Heading</h2>
+        <ul>
+          <li onclick="changeColor(1)"><a>Link1</a></li>
+          <li onclick="changeColor(2)"><a>Link2</a></li>
+          <li onclick="changeColor(3)"><a>Link3</a></li>
+        </ul>
+      </header>
+      <aside>Menu</aside>
+      <section id="section">Section</section>
+      <footer id="footer">Footer</footer>
+    </div>
+  </body>
+</html>
